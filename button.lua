@@ -64,6 +64,7 @@ function clickButton(action)
     if action == "snake" then
       animal:new(0,0,sprites.snake, "snake")
     end
+  end
     -- buttons for load,save,clear,delete and quit actions
     if action == "load" then
       animal:load()
@@ -88,7 +89,6 @@ function clickButton(action)
     if action == "quit" then
       love.event.quit()
     end
-  end
 end
 
 -- these are used to remove a button if button.active is set false
