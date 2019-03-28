@@ -23,9 +23,6 @@ function love.update(dt)
   elseif buttonTimer < .1 then
     spawnAnimal = true
   end
-  if spawnAnimal == true then
-    checkButton()
-  end
 
     if love.filesystem.getInfo("data.lua") then
       saveFile = true
